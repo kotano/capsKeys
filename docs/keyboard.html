@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" href="assets/style.css" /> -->
+	<style>
+		.container {
+			font-weight:300;
+			background-color:#f1f1f1;
+			margin: 0 auto;
+			/* width:1150px; */
+			width: fit-content;
+			height: fit-content;
+			padding-top:30px;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+	}
+	.keyboard {
+			height: 400px;
+			margin: 5px auto 0;
+			width: 845px;
+			position: relative;
+			padding: 0 22px;
+			display: inline-block;
+	}
+	.key {
+			border-bottom: 1px solid #D8D8DE;
+			border-right: 1px solid #D8D8DE;
+			opacity: 0.98;
+			color: #898989;
+			font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+			"Muli", "Helvetica", "Lucida Grande", sans-serif;
+			display: inline-block;
+			font-size: 18px;
+			height: 52px;
+			text-align: center;
+			vertical-align: top;
+			width: 50px;
+			margin: 5px 1px;
+			border-radius: 3px;
+			background-color:#ffffff;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+	}
+	.key:hover {
+			font-weight: bold;
+			box-shadow: inset 0 20px 20px -20px #E7E7E7;
+	}
+	.extra {
+			font-size:13px;
+	}
+	.vh {
+		visibility: hidden;
+	}
+	.toprow {
+		height: 26px;
+		font-size: 13px;
+		line-height: 0px;
+		width: 52px;
+	}
+	.tilde {
+		font-size: 16px;
+		line-height: 15px;
+	}
+	.del {
+		text-align: right;
+		padding-right: 6px;
+		width: 72px;
+		font-size: 13px;
+		line-height: 40px;
+	}
+	.plus {
+		line-height: 15px;
+	}
+	.min {
+		line-height: 5px;
+	}
+	.Tab {
+			text-align: left;
+			padding-left: 6px;
+			width: 72px;
+			font-size: 13px;
+			line-height: 40px;
+	}
+	.bracket {
+			line-height: 4px;
+			font-size: 15px;
+	}
+	.CapsLock {
+			text-align: left;
+			padding-left: 6px;
+			width: 85px;
+			font-size: 13px;
+			line-height: 40px;
+	}
+	.return {
+			text-align: right;
+			padding-right: 6px;
+			width: 90px;
+			font-size: 13px;
+			line-height: 40px;
+	}
+	.bottomrow {
+			font-size: 13px;
+			line-height: 56px;
+			height: 58px;
+	}
+	.fn {
+			text-align: left;
+			padding-left: 6px;
+			width: 46px;
+	}
+	.cmd {
+			width:60px;
+	}
+	.press {
+			background-color: #C5C5C5;
+			border-color: #C5C5C5;
+			color: #FFF;
+			font-weight: bold;
+	}
+	.active {
+			background: linear-gradient(to bottom right,#8FD700, #17D700);
+			opacity: 1;
+			color: #fff;
+			border-color: #D8D8DE;
+	}
+	.shiftleft {
+			text-align: left;
+			padding-left: 6px;
+			width: 114px;
+			font-size: 13px;
+			line-height: 40px;
+	}
+	.shiftright {
+			text-align: right;
+			padding-right: 6px;
+			width: 120px;
+			font-size: 13px;
+			line-height: 40px;
+	}
+	.Space {
+			width: 284px;
+			height: 58px;
+	}
+	.left {
+			height:26px;
+			margin-top: 37px;
+			font-size: 10px;
+			line-height: 27px;
+			width: 52px;
+	}
+	.updown {
+			font-size: 10px;
+			height:58px;
+			width: 52px;
+	}
+	.up {
+			height: 29px;
+			line-height: 30px;
+			border-bottom: 1px solid #E7E7E7;
+	}
+	.down {
+			height:28px;
+			line-height: 30px;
+	}
+	.hidden {
+			visibility: hidden;
+	}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:500" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<div class="keyboard">
+			<div class="key Escape toprow"><p>esc</p></div>
+						<div class="key F1 toprow"><p>F1</p></div>
+						<div class="key F2 toprow" ><p>F2</p></div>
+						<div class="key F3 toprow"><p>F3</p></div>
+						<div class="key F4 toprow"><p>F4</p></div>
+						<div class="key F5 toprow"><p>F5</p></div>
+						<div class="key F6 toprow"><p>F6</p></div>
+						<div class="key F7 toprow"><p>F7</p></div>
+						<div class="key F8 toprow"><p>F8</p></div>
+						<div class="key F9 toprow"><p>F9</p></div>
+						<div class="key F10 toprow"><p>F10</p></div>
+						<div class="key F11 toprow"><p>F11</p></div>
+						<div class="key F12 toprow"><p>F12</p></div>
+						<div class="key toprow"><p>Delete</p></div>
+						<div class="key backquote tilde"><p>~<br />`</p></div>
+						<div class="key 1 bracket exclamation"><p>!<br /><br /><br /><br /><br />1</p></div>
+						<div class="key 2 bracket at"><p>@<br /><br /><br /><br /><br />2</p></div>
+						<div class="key 3 bracket hashtag"><p>#<br /><br /><br /><br /><br />3</p></div>
+						<div class="key 4 bracket dollarsign"><p>$<br /><br /><br /><br /><br />4</p></div>
+						<div class="key 5 bracket percent"><p>%<br /><br /><br /><br /><br />5</p></div>
+						<div class="key 6 bracket circumflex"><p>^<br /><br /><br /><br /><br />6</p></div>
+						<div class="key 7 bracket and"><p>&<br /><br /><br /><br /><br />7</p></div>
+						<div class="key 8 bracket asterisk"><p>*<br /><br /><br /><br /><br />8</p></div>
+						<div class="key 9 bracket roundbracketleft"><p>(<br /><br /><br /><br /><br />9</p></div>
+						<div class="key 0 bracket roundbracketright"><p>)<br /><br /><br /><br /><br />0</p></div>
+						<div class="key minus bracket Underscore"><p>-<br /><br /><br /><br />_</p></div>
+						<div class="key equal bracket plus"><p>+<br /><br /><br /><br /><br />=</p></div>
+						<div class="key Backspace del active"><p style="font-size: x-small;">Backspace x5</p></div>
+						<div class="key Tab"><p>tab</p></div>
+						<div class="key q Q active"><p style="font-size: x-small;">Delete line back</p></div>
+						<div class="key w W active"><p style="font-size: x-small;">Delete word back</p></div>
+						<div class="key e E active"><p style="font-size: x-small;">Delete word forward</p></div>
+						<div class="key r R active"><p style="font-size: x-small;">Delete line forward</p></div>
+						<div class="key t T"><p>T</p></div>
+						<div class="key y Y active"><p>PgUp</p></div>
+						<div class="key u U active"><p>Up x5</p></div>
+						<div class="key i I active"><p>Up</p></div>
+						<div class="key o O"><p>O</p></div>
+						<div class="key p P active"><p style="font-size: small;">Context menu</p></div>
+						<div class="key bracketleft bracket CurlyBracketL"><p>{<br /><br /><br /><br /><br />[</p></div>
+						<div class="key bracketright bracket CurlyBracketR"><p>}<br /><br /><br /><br /><br />]</p></div>
+						<div class="key backslash bracket stick"><p>|<br /><br /><br /><br /><br />\</p></div>
+						<div class="key CapsLock" style="background-color:yellow"><p>caps lock</p></div>
+						<div class="key a A active"><p style="font-size: x-small;">Copy line and paste below</p></div>
+						<div class="key s S active"><p style="font-size: x-small;">Select current word</p></div>
+						<div class="key d D active"><p style="font-size: x-small;">Copy line and delete</p></div>
+						<div class="key f F"><p>F</p></div>
+						<div class="key g G"><p>G</p></div>
+						<div class="key h H active"><p>Home</p></div>
+						<div class="key j J active"><p>Left</p></div>
+						<div class="key k K active"><p>Down</p></div>
+						<div class="key l L active"><p>Right</p></div>
+						<div class="key semicolon colon active"><p>End</p></div>
+						<div class="key quote bracket doublequote"><p>"<br /><br /><br /><br /><br />'</p></div>
+						<div class="key Enter return"><p>Enter</p></div>
+						<div class="key Shift shiftleft"><p>shift</p></div>
+						<div class="key z Z"><p>Z</p></div>
+						<div class="key x X active"><p>Cut</p></div>
+						<div class="key c C active"><p >Copy</p></div>
+						<div class="key v V active"><p>Paste</p></div>
+						<div class="key b B active"><p>PgUp</p></div>
+						<div class="key n N active"><p style="font-size: small;">Down x5</p></div>
+						<div class="key m M"><p>M</p></div>
+						<div class="key comma bracket flexleft active"><p><<br /><br /><br /><br /><br />Back</p></div>
+						<div class="key punt bracket flexright active"><p>><br /><br /><br /><br /><br />Forward</p></div>
+						<div class="key slash bracket question"><p>?<br /><br /><br /><br /><br />/</p></div>
+						<div class="key Shift shiftright"><p>shift</p></div>
+						<div class ="key Control bottomrow"><p>control</p></div>
+						<div class="key nowork bottomrow fn"><p>fn</p></div>
+						<div class ="key Meta bottomrow cmd"><p>Win</p></div>
+						<div class ="key Alt bottomrow active"><p style="font-size: smaller;">Word left</p></div>
+						<div class ="key Space active"><p>Word right</p></div>
+						<div class ="key bottomrow Meta cmd"><p>Win</p></div>
+						<div class ="key bottomrow Alt"><p>Alt</p></div>
+						<div class ="key ArrowLeft left">&#9664</div>
+						<div class ="key updown">
+							<div class="up ArrowUp">&#9650</div>
+							<div class="down ArrowDown">&#9660</div>
+						</div>
+						<div class="key left ArrowRight">&#9654</div>
+		</div>
+	</div>
+</body>
+</html>
